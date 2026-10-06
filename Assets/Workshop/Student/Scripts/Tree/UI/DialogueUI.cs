@@ -38,11 +38,11 @@ public class DialogueUI : MonoBehaviour
         // 4. ��ҧ����������͡���
         ClearChoices();
         // 5. ���ҧ����������͡������ nexts
-        var choiceText = new List<string>(node.nexts.Keys);
-        for (int i = 0; i < choiceText.Count; i++)
+        var chois = new List<string>(node.nexts.Keys);
+        for (int i = 0; i < chois.Count; i++)
         {
-            string choice = choiceText[i];
-            CreateChoiceButton(choice, i);
+            string choiceText = chois[i];
+            CreateChoiceButton(choiceText, i);
         }
     }
 
